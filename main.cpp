@@ -2,6 +2,7 @@
 #include <QStackedWidget>
 #include <QWidget>
 #include <QPushButton>
+#include <QLineEdit>
 #include <QVBoxLayout>
 #include <QLabel>
 #include <iostream>
@@ -10,6 +11,7 @@ using namespace std;
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
+    int points = 0;
 
     QWidget *page1 = new QWidget;
     {
@@ -31,134 +33,494 @@ int main(int argc, char *argv[])
     QWidget *page2 = new QWidget;
     {
         auto *lay = new QVBoxLayout(page2);
-        lay->addWidget(new QPushButton("quiz 1"));
+        QLabel *label = new QLabel("Question 1");
+        QLineEdit *answer = new QLineEdit;
+        QPushButton *next = new QPushButton("next");
+        label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        lay->addWidget(label);
+        lay->addWidget(answer);
+        lay->addWidget(next);
+        QObject::connect(next, &QPushButton::clicked, [answer, &points]() {
+            QString text = answer->text();
+            string solution = "hello";
+            cout << text.toStdString() << endl;
+            if (text == solution) {
+                cout << "Correct\n";
+                points++;
+                cout << points;
+            } else {
+                cout << "Wrong" << endl;
+            }
+        });
     }
 
     QWidget *page3 = new QWidget;
     {
         auto *lay = new QVBoxLayout(page3);
-        lay->addWidget(new QPushButton("quiz 1.1"));
+        QLabel *label = new QLabel("Question 1");
+        QLineEdit *answer = new QLineEdit;
+        QPushButton *next = new QPushButton("next");
+        label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        lay->addWidget(label);
+        lay->addWidget(answer);
+        lay->addWidget(next);
+        QObject::connect(next, &QPushButton::clicked, [answer, &points]() {
+            QString text = answer->text();
+            string solution = "hello";
+            cout << text.toStdString() << endl;
+            if (text == solution) {
+                points++;
+                cout << points << endl;
+                cout << "Correct\n";
+            } else {
+                cout << "Wrong" << endl;
+            }
+        });
     }
 
     QWidget *page4 = new QWidget;
     {
         auto *lay = new QVBoxLayout(page4);
-        lay->addWidget(new QPushButton("quiz 1.2"));
+        QLabel *label = new QLabel("Question 1");
+        QLineEdit *answer = new QLineEdit;
+        QPushButton *next = new QPushButton("next");
+        label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        lay->addWidget(label);
+        lay->addWidget(answer);
+        lay->addWidget(next);
+        QObject::connect(next, &QPushButton::clicked, [answer, &points]() {
+            QString text = answer->text();
+            string solution = "hello";
+            cout << text.toStdString() << endl;
+            if (text == solution) {
+                points++;
+                cout << points << endl;
+                cout << "Correct\n";
+            } else {
+                cout << "Wrong" << endl;
+            }
+        });
     }
 
     QWidget *page5 = new QWidget;
     {
         auto *lay = new QVBoxLayout(page5);
-        lay->addWidget(new QPushButton("quiz 1.3"));
+        QLabel *label = new QLabel("Question 1");
+        QLineEdit *answer = new QLineEdit;
+        QPushButton *next = new QPushButton("next");
+        label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        lay->addWidget(label);
+        lay->addWidget(answer);
+        lay->addWidget(next);
+        QObject::connect(next, &QPushButton::clicked, [answer, &points]() {
+            QString text = answer->text();
+            string solution = "hello";
+            cout << text.toStdString() << endl;
+            if (text == solution) {
+                points++;
+                cout << points << endl;
+                cout << "Correct\n";
+            } else {
+                cout << "Wrong" << endl;
+            }
+        });
     }
 
     QWidget *page6 = new QWidget;
     {
         auto *lay = new QVBoxLayout(page6);
-        lay->addWidget(new QPushButton("quiz 1.4"));
+        QLabel *label = new QLabel("Question 1");
+        QLineEdit *answer = new QLineEdit;
+        QPushButton *next = new QPushButton("next");
+        label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        lay->addWidget(label);
+        lay->addWidget(answer);
+        lay->addWidget(next);
+        QObject::connect(next, &QPushButton::clicked, [answer, &points]() {
+            QString text = answer->text();
+            string solution = "hello";
+            cout << text.toStdString() << endl;
+            if (text == solution) {
+                points++;
+                cout << points << endl;
+                cout << "Correct\n";
+            } else {
+                cout << "Wrong" << endl;
+            }
+        });
     }
 
     QWidget *page7 = new QWidget;
     {
         auto *lay = new QVBoxLayout(page7);
-        lay->addWidget(new QPushButton("quiz 1.5"));
+        QLabel *label = new QLabel("Question 1");
+        QLineEdit *answer = new QLineEdit;
+        QPushButton *next = new QPushButton("next");
+        label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        lay->addWidget(label);
+        lay->addWidget(answer);
+        lay->addWidget(next);
+        QObject::connect(next, &QPushButton::clicked, [answer, &points]() {
+            QString text = answer->text();
+            string solution = "hello";
+            cout << text.toStdString() << endl;
+            if (text == solution) {
+                points++;
+                cout << points << endl;
+                cout << "Correct\n";
+            } else {
+                cout << "Wrong" << endl;
+            }
+        });
     }
 
     QWidget *page8 = new QWidget;
     {
         auto *lay = new QVBoxLayout(page8);
-        lay->addWidget(new QPushButton("quiz 1.6"));
+        QLabel *label = new QLabel("Question 1");
+        QLineEdit *answer = new QLineEdit;
+        QPushButton *next = new QPushButton("next");
+        label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        lay->addWidget(label);
+        lay->addWidget(answer);
+        lay->addWidget(next);
+        QObject::connect(next, &QPushButton::clicked, [answer, &points]() {
+            QString text = answer->text();
+            string solution = "hello";
+            cout << text.toStdString() << endl;
+            if (text == solution) {
+                points++;
+                cout << points << endl;
+                cout << "Correct\n";
+            } else {
+                cout << "Wrong" << endl;
+            }
+        });
     }
 
     QWidget *page9 = new QWidget;
     {
         auto *lay = new QVBoxLayout(page9);
-        lay->addWidget(new QPushButton("quiz 1.7"));
+        QLabel *label = new QLabel("Question 1");
+        QLineEdit *answer = new QLineEdit;
+        QPushButton *next = new QPushButton("next");
+        label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        lay->addWidget(label);
+        lay->addWidget(answer);
+        lay->addWidget(next);
+        QObject::connect(next, &QPushButton::clicked, [answer, &points]() {
+            QString text = answer->text();
+            string solution = "hello";
+            cout << text.toStdString() << endl;
+            if (text == solution) {
+                points++;
+                cout << points << endl;
+                cout << "Correct\n";
+            } else {
+                cout << "Wrong" << endl;
+            }
+        });
     }
 
     QWidget *page10 = new QWidget;
     {
         auto *lay = new QVBoxLayout(page10);
-        lay->addWidget(new QPushButton("quiz 1.8"));
+        QLabel *label = new QLabel("Question 1");
+        QLineEdit *answer = new QLineEdit;
+        QPushButton *next = new QPushButton("next");
+        label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        lay->addWidget(label);
+        lay->addWidget(answer);
+        lay->addWidget(next);
+        QObject::connect(next, &QPushButton::clicked, [answer, &points]() {
+            QString text = answer->text();
+            string solution = "hello";
+            cout << text.toStdString() << endl;
+            if (text == solution) {
+                points++;
+                cout << points << endl;
+                cout << "Correct\n";
+            } else {
+                cout << "Wrong" << endl;
+            }
+        });
     }
 
     QWidget *page11 = new QWidget;
     {
         auto *lay = new QVBoxLayout(page11);
-        lay->addWidget(new QPushButton("quiz 1.9"));
+        QLabel *label = new QLabel("Question 1");
+        QLineEdit *answer = new QLineEdit;
+        QPushButton *next = new QPushButton("next");
+        label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        lay->addWidget(label);
+        lay->addWidget(answer);
+        lay->addWidget(next);
+        QObject::connect(next, &QPushButton::clicked, [answer, &points]() {
+            QString text = answer->text();
+            string solution = "hello";
+            cout << text.toStdString() << endl;
+            if (text == solution) {
+                points++;
+                cout << points << endl;
+                cout << "Correct\n";
+            } else {
+                cout << "Wrong" << endl;
+            }
+        });
     }
 
     QWidget *page12 = new QWidget;
     {
         auto *lay = new QVBoxLayout(page12);
-        lay->addWidget(new QPushButton("quiz 1 ende"));
+        lay->addWidget(new QPushButton("finish"));
     }
 
     // Quiz 2
     QWidget *Qpage1 = new QWidget;
     {
         auto *lay = new QVBoxLayout(Qpage1);
-        lay->addWidget(new QPushButton("quiz 2"));
+        QLabel *label = new QLabel("Question 1");
+        QLineEdit *answer = new QLineEdit;
+        QPushButton *next = new QPushButton("next");
+        label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        lay->addWidget(label);
+        lay->addWidget(answer);
+        lay->addWidget(next);
+        QObject::connect(next, &QPushButton::clicked, [answer, &points]() {
+            QString text = answer->text();
+            string solution = "hello";
+            cout << text.toStdString() << endl;
+            if (text == solution) {
+                points++;
+                cout << points << endl;
+                cout << "Correct\n";
+            } else {
+                cout << "Wrong" << endl;
+            }
+        });
     }
 
     QWidget *Qpage2 = new QWidget;
     {
         auto *lay = new QVBoxLayout(Qpage2);
-        lay->addWidget(new QPushButton("quiz 2.1"));
+        QLabel *label = new QLabel("Question 1");
+        QLineEdit *answer = new QLineEdit;
+        QPushButton *next = new QPushButton("next");
+        label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        lay->addWidget(label);
+        lay->addWidget(answer);
+        lay->addWidget(next);
+        QObject::connect(next, &QPushButton::clicked, [answer, &points]() {
+            QString text = answer->text();
+            string solution = "hello";
+            cout << text.toStdString() << endl;
+            if (text == solution) {
+                points++;
+                cout << points << endl;
+                cout << "Correct\n";
+            } else {
+                cout << "Wrong" << endl;
+            }
+        });
     }
 
     QWidget *Qpage3 = new QWidget;
     {
         auto *lay = new QVBoxLayout(Qpage3);
-        lay->addWidget(new QPushButton("quiz 2.2"));
+        QLabel *label = new QLabel("Question 1");
+        QLineEdit *answer = new QLineEdit;
+        QPushButton *next = new QPushButton("next");
+        label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        lay->addWidget(label);
+        lay->addWidget(answer);
+        lay->addWidget(next);
+        QObject::connect(next, &QPushButton::clicked, [answer, &points]() {
+            QString text = answer->text();
+            string solution = "hello";
+            cout << text.toStdString() << endl;
+            if (text == solution) {
+                points++;
+                cout << points << endl;
+                cout << "Correct\n";
+            } else {
+                cout << "Wrong" << endl;
+            }
+        });
     }
 
     QWidget *Qpage4 = new QWidget;
     {
         auto *lay = new QVBoxLayout(Qpage4);
-        lay->addWidget(new QPushButton("quiz 2.3"));
+        QLabel *label = new QLabel("Question 1");
+        QLineEdit *answer = new QLineEdit;
+        QPushButton *next = new QPushButton("next");
+        label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        lay->addWidget(label);
+        lay->addWidget(answer);
+        lay->addWidget(next);
+        QObject::connect(next, &QPushButton::clicked, [answer, &points]() {
+            QString text = answer->text();
+            string solution = "hello";
+            cout << text.toStdString() << endl;
+            if (text == solution) {
+                points++;
+                cout << points << endl;
+                cout << "Correct\n";
+            } else {
+                cout << "Wrong" << endl;
+            }
+        });
     }
 
     QWidget *Qpage5 = new QWidget;
     {
         auto *lay = new QVBoxLayout(Qpage5);
-        lay->addWidget(new QPushButton("quiz 2.4"));
+        QLabel *label = new QLabel("Question 1");
+        QLineEdit *answer = new QLineEdit;
+        QPushButton *next = new QPushButton("next");
+        label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        lay->addWidget(label);
+        lay->addWidget(answer);
+        lay->addWidget(next);
+        QObject::connect(next, &QPushButton::clicked, [answer, &points]() {
+            QString text = answer->text();
+            string solution = "hello";
+            cout << text.toStdString() << endl;
+            if (text == solution) {
+                points++;
+                cout << points << endl;
+                cout << "Correct\n";
+            } else {
+                cout << "Wrong" << endl;
+            }
+        });
     }
 
     QWidget *Qpage6 = new QWidget;
     {
         auto *lay = new QVBoxLayout(Qpage6);
-        lay->addWidget(new QPushButton("quiz 2.5"));
+        QLabel *label = new QLabel("Question 1");
+        QLineEdit *answer = new QLineEdit;
+        QPushButton *next = new QPushButton("next");
+        label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        lay->addWidget(label);
+        lay->addWidget(answer);
+        lay->addWidget(next);
+        QObject::connect(next, &QPushButton::clicked, [answer, &points]() {
+            QString text = answer->text();
+            string solution = "hello";
+            cout << text.toStdString() << endl;
+            if (text == solution) {
+                points++;
+                cout << points << endl;
+                cout << "Correct\n";
+            } else {
+                cout << "Wrong" << endl;
+            }
+        });
     }
 
     QWidget *Qpage7 = new QWidget;
     {
         auto *lay = new QVBoxLayout(Qpage7);
-        lay->addWidget(new QPushButton("quiz 2.6"));
+        QLabel *label = new QLabel("Question 1");
+        QLineEdit *answer = new QLineEdit;
+        QPushButton *next = new QPushButton("next");
+        label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        lay->addWidget(label);
+        lay->addWidget(answer);
+        lay->addWidget(next);
+        QObject::connect(next, &QPushButton::clicked, [answer, &points]() {
+            QString text = answer->text();
+            string solution = "hello";
+            cout << text.toStdString() << endl;
+            if (text == solution) {
+                points++;
+                cout << points << endl;
+                cout << "Correct\n";
+            } else {
+                cout << "Wrong" << endl;
+            }
+        });
     }
 
     QWidget *Qpage8 = new QWidget;
     {
         auto *lay = new QVBoxLayout(Qpage8);
-        lay->addWidget(new QPushButton("quiz 2.7"));
+        QLabel *label = new QLabel("Question 1");
+        QLineEdit *answer = new QLineEdit;
+        QPushButton *next = new QPushButton("next");
+        label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        lay->addWidget(label);
+        lay->addWidget(answer);
+        lay->addWidget(next);
+        QObject::connect(next, &QPushButton::clicked, [answer, &points]() {
+            QString text = answer->text();
+            string solution = "hello";
+            cout << text.toStdString() << endl;
+            if (text == solution) {
+                points++;
+                cout << points << endl;
+                cout << "Correct\n";
+            } else {
+                cout << "Wrong" << endl;
+            }
+        });
     }
 
     QWidget *Qpage9 = new QWidget;
     {
         auto *lay = new QVBoxLayout(Qpage9);
-        lay->addWidget(new QPushButton("quiz 2.8"));
+        QLabel *label = new QLabel("Question 1");
+        QLineEdit *answer = new QLineEdit;
+        QPushButton *next = new QPushButton("next");
+        label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        lay->addWidget(label);
+        lay->addWidget(answer);
+        lay->addWidget(next);
+        QObject::connect(next, &QPushButton::clicked, [answer, &points]() {
+            QString text = answer->text();
+            string solution = "hello";
+            cout << text.toStdString() << endl;
+            if (text == solution) {
+                points++;
+                cout << points << endl;
+                cout << "Correct\n";
+            } else {
+                cout << "Wrong" << endl;
+            }
+        });
     }
 
     QWidget *Qpage10 = new QWidget;
     {
         auto *lay = new QVBoxLayout(Qpage10);
-        lay->addWidget(new QPushButton("quiz 2.9"));
+        QLabel *label = new QLabel("Question 1");
+        QLineEdit *answer = new QLineEdit;
+        QPushButton *next = new QPushButton("next");
+        label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        lay->addWidget(label);
+        lay->addWidget(answer);
+        lay->addWidget(next);
+        QObject::connect(next, &QPushButton::clicked, [answer, &points]() {
+            QString text = answer->text();
+            string solution = "hello";
+            cout << text.toStdString() << endl;
+            if (text == solution) {
+                points++;
+                cout << points << endl;
+                cout << "Correct\n";
+            } else {
+                cout << "Wrong" << endl;
+            }
+        });
     }
 
     QWidget *Qpage11 = new QWidget;
     {
         auto *lay = new QVBoxLayout(Qpage11);
-        lay->addWidget(new QPushButton("quiz 2 ende"));
+        lay->addWidget(new QPushButton("finish"));
     }
 
     QStackedWidget *stack = new QStackedWidget;
