@@ -41,6 +41,7 @@ int main(int argc, char *argv[])
         lay->addWidget(answer);
         lay->addWidget(next);
         QObject::connect(next, &QPushButton::clicked, [answer, &points]() {
+            points = 0;
             QString text = answer->text();
             string solution = "hello";
             cout << text.toStdString() << endl;
@@ -288,6 +289,7 @@ int main(int argc, char *argv[])
         lay->addWidget(answer);
         lay->addWidget(next);
         QObject::connect(next, &QPushButton::clicked, [answer, &points]() {
+            points = 0;
             QString text = answer->text();
             string solution = "hello";
             cout << text.toStdString() << endl;
