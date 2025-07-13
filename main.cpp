@@ -16,10 +16,12 @@ int main(int argc, char *argv[])
     QWidget *page1 = new QWidget;
     {
         QLabel *label = new QLabel("Choose a Quiz");
+        QLabel *label2 = new QLabel("Points: ");
         auto *lay = new QVBoxLayout(page1);
         label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
         label->setStyleSheet("QLabel {font-size: 20px;}");
         lay->addWidget(label);
+        lay->addWidget(label2);
 
         // Quize Buttons
         QPushButton *quiz1Button = new QPushButton("Quiz 1");
@@ -37,6 +39,8 @@ int main(int argc, char *argv[])
         QLineEdit *answer = new QLineEdit;
         QPushButton *next = new QPushButton("next");
         label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        label->setStyleSheet("QLabel {font-size: 18px;}");
+        next->setStyleSheet("background-color: #7c3aed");
         lay->addWidget(label);
         lay->addWidget(answer);
         lay->addWidget(next);
@@ -62,6 +66,8 @@ int main(int argc, char *argv[])
         QLineEdit *answer = new QLineEdit;
         QPushButton *next = new QPushButton("next");
         label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        label->setStyleSheet("QLabel {font-size: 18px;}");
+        next->setStyleSheet("background-color: #7c3aed");
         lay->addWidget(label);
         lay->addWidget(answer);
         lay->addWidget(next);
@@ -86,6 +92,8 @@ int main(int argc, char *argv[])
         QLineEdit *answer = new QLineEdit;
         QPushButton *next = new QPushButton("next");
         label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        label->setStyleSheet("QLabel {font-size: 18px;}");
+        next->setStyleSheet("background-color: #7c3aed");
         lay->addWidget(label);
         lay->addWidget(answer);
         lay->addWidget(next);
@@ -110,6 +118,8 @@ int main(int argc, char *argv[])
         QLineEdit *answer = new QLineEdit;
         QPushButton *next = new QPushButton("next");
         label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        label->setStyleSheet("QLabel {font-size: 18px;}");
+        next->setStyleSheet("background-color: #7c3aed");
         lay->addWidget(label);
         lay->addWidget(answer);
         lay->addWidget(next);
@@ -134,6 +144,8 @@ int main(int argc, char *argv[])
         QLineEdit *answer = new QLineEdit;
         QPushButton *next = new QPushButton("next");
         label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        label->setStyleSheet("QLabel {font-size: 18px;}");
+        next->setStyleSheet("background-color: #7c3aed");
         lay->addWidget(label);
         lay->addWidget(answer);
         lay->addWidget(next);
@@ -158,6 +170,8 @@ int main(int argc, char *argv[])
         QLineEdit *answer = new QLineEdit;
         QPushButton *next = new QPushButton("next");
         label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        label->setStyleSheet("QLabel {font-size: 18px;}");
+        next->setStyleSheet("background-color: #7c3aed");
         lay->addWidget(label);
         lay->addWidget(answer);
         lay->addWidget(next);
@@ -182,6 +196,8 @@ int main(int argc, char *argv[])
         QLineEdit *answer = new QLineEdit;
         QPushButton *next = new QPushButton("next");
         label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        label->setStyleSheet("QLabel {font-size: 18px;}");
+        next->setStyleSheet("background-color: #7c3aed");
         lay->addWidget(label);
         lay->addWidget(answer);
         lay->addWidget(next);
@@ -206,6 +222,8 @@ int main(int argc, char *argv[])
         QLineEdit *answer = new QLineEdit;
         QPushButton *next = new QPushButton("next");
         label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        label->setStyleSheet("QLabel {font-size: 18px;}");
+        next->setStyleSheet("background-color: #7c3aed");
         lay->addWidget(label);
         lay->addWidget(answer);
         lay->addWidget(next);
@@ -230,6 +248,8 @@ int main(int argc, char *argv[])
         QLineEdit *answer = new QLineEdit;
         QPushButton *next = new QPushButton("next");
         label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        label->setStyleSheet("QLabel {font-size: 18px;}");
+        next->setStyleSheet("background-color: #7c3aed");
         lay->addWidget(label);
         lay->addWidget(answer);
         lay->addWidget(next);
@@ -254,6 +274,8 @@ int main(int argc, char *argv[])
         QLineEdit *answer = new QLineEdit;
         QPushButton *next = new QPushButton("next");
         label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        label->setStyleSheet("QLabel {font-size: 18px;}");
+        next->setStyleSheet("background-color: #7c3aed");
         lay->addWidget(label);
         lay->addWidget(answer);
         lay->addWidget(next);
@@ -285,6 +307,8 @@ int main(int argc, char *argv[])
         QLineEdit *answer = new QLineEdit;
         QPushButton *next = new QPushButton("next");
         label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        label->setStyleSheet("QLabel {font-size: 18px;}");
+        next->setStyleSheet("background-color: #7c3aed");
         lay->addWidget(label);
         lay->addWidget(answer);
         lay->addWidget(next);
@@ -310,6 +334,8 @@ int main(int argc, char *argv[])
         QLineEdit *answer = new QLineEdit;
         QPushButton *next = new QPushButton("next");
         label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        label->setStyleSheet("QLabel {font-size: 18px;}");
+        next->setStyleSheet("background-color: #7c3aed");
         lay->addWidget(label);
         lay->addWidget(answer);
         lay->addWidget(next);
@@ -334,6 +360,8 @@ int main(int argc, char *argv[])
         QLineEdit *answer = new QLineEdit;
         QPushButton *next = new QPushButton("next");
         label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        label->setStyleSheet("QLabel {font-size: 18px;}");
+        next->setStyleSheet("background-color: #7c3aed");
         lay->addWidget(label);
         lay->addWidget(answer);
         lay->addWidget(next);
@@ -358,6 +386,8 @@ int main(int argc, char *argv[])
         QLineEdit *answer = new QLineEdit;
         QPushButton *next = new QPushButton("next");
         label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        label->setStyleSheet("QLabel {font-size: 18px;}");
+        next->setStyleSheet("background-color: #7c3aed");
         lay->addWidget(label);
         lay->addWidget(answer);
         lay->addWidget(next);
@@ -382,6 +412,8 @@ int main(int argc, char *argv[])
         QLineEdit *answer = new QLineEdit;
         QPushButton *next = new QPushButton("next");
         label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        label->setStyleSheet("QLabel {font-size: 18px;}");
+        next->setStyleSheet("background-color: #7c3aed");
         lay->addWidget(label);
         lay->addWidget(answer);
         lay->addWidget(next);
@@ -406,6 +438,8 @@ int main(int argc, char *argv[])
         QLineEdit *answer = new QLineEdit;
         QPushButton *next = new QPushButton("next");
         label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        label->setStyleSheet("QLabel {font-size: 18px;}");
+        next->setStyleSheet("background-color: #7c3aed");
         lay->addWidget(label);
         lay->addWidget(answer);
         lay->addWidget(next);
@@ -430,6 +464,8 @@ int main(int argc, char *argv[])
         QLineEdit *answer = new QLineEdit;
         QPushButton *next = new QPushButton("next");
         label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        label->setStyleSheet("QLabel {font-size: 18px;}");
+        next->setStyleSheet("background-color: #7c3aed");
         lay->addWidget(label);
         lay->addWidget(answer);
         lay->addWidget(next);
@@ -454,6 +490,8 @@ int main(int argc, char *argv[])
         QLineEdit *answer = new QLineEdit;
         QPushButton *next = new QPushButton("next");
         label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        label->setStyleSheet("QLabel {font-size: 18px;}");
+        next->setStyleSheet("background-color: #7c3aed");
         lay->addWidget(label);
         lay->addWidget(answer);
         lay->addWidget(next);
@@ -478,6 +516,8 @@ int main(int argc, char *argv[])
         QLineEdit *answer = new QLineEdit;
         QPushButton *next = new QPushButton("next");
         label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        label->setStyleSheet("QLabel {font-size: 18px;}");
+        next->setStyleSheet("background-color: #7c3aed");
         lay->addWidget(label);
         lay->addWidget(answer);
         lay->addWidget(next);
@@ -502,6 +542,8 @@ int main(int argc, char *argv[])
         QLineEdit *answer = new QLineEdit;
         QPushButton *next = new QPushButton("next");
         label->setAlignment(Qt::AlignHCenter | Qt::AlignTop);
+        label->setStyleSheet("QLabel {font-size: 18px;}");
+        next->setStyleSheet("background-color: #7c3aed");
         lay->addWidget(label);
         lay->addWidget(answer);
         lay->addWidget(next);
@@ -523,6 +565,7 @@ int main(int argc, char *argv[])
     {
         auto *lay = new QVBoxLayout(Qpage11);
         lay->addWidget(new QPushButton("finish"));
+        next->setStyleSheet("background-color: #7c3aed");
     }
 
     QStackedWidget *stack = new QStackedWidget;
